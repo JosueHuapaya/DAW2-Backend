@@ -58,7 +58,7 @@ public class Cuenta {
 	
 	@JsonIgnore
 	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "idUsuarioActualiza")
+	@JoinColumn(name = "idUsuarioActualizacion")
 	private Usuario usuarioActualiza;
 
 }
