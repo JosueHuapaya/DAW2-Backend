@@ -26,10 +26,10 @@ public interface UsuarioRepository extends JpaRepository<Usuario, Integer>{
 	@Query("Select r from Usuario r, UsuarioHasRol u where r.idUsuario = u.usuario.idUsuario and u.rol.idRol = 2 order by r.apellidos desc ")
 	public abstract List<Usuario> listaJefePrestamistaTotales();
 	
-	@Query("Select r from Usuario r, UsuarioHasRol u where r.idUsuario = u.usuario.idUsuario and u.rol.idRol = 3 and r.usuarioSuperior.idUsuario =?1 order by r.apellidos desc ")
+	@Query("Select r from Usuario r, UsuarioHasRol u where r.idUsuario = u.usuario.idUsuario and u.rol.idRol = 3 and r.usuarioSuperior =?1 order by r.apellidos desc ")
 	public abstract List<Usuario> listaPrestamistaDeUnJefe(int idUsuario);
 	
-	@Query("Select r from Usuario r, UsuarioHasRol u where r.idUsuario = u.usuario.idUsuario and u.rol.idRol = 4 and r.usuarioSuperior.idUsuario =?1 order by r.apellidos desc ")
+	@Query("Select r from Usuario r, UsuarioHasRol u where r.idUsuario = u.usuario.idUsuario and u.rol.idRol = 4 and r.usuarioSuperior =?1 order by r.apellidos desc ")
 	public abstract List<Usuario> listaPrestamistariosDeUnPrestamista(int idUsuario);
 	
 }
