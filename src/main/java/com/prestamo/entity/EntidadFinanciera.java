@@ -53,13 +53,15 @@ public class EntidadFinanciera {
 	@Temporal(TemporalType.TIMESTAMP)
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd hh:mm:ss")
 	private Date fechaActualizacion;
-	
-	@JsonIgnore
+
+	// Sin JsonIgnoreProperties no se registra
+	@JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "idUsuarioRegistro")
 	private Usuario usuarioRegistro;
-	
-	@JsonIgnore
+
+	// Sin JsonIgnoreProperties no se registra
+	@JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "idUsuarioActualizacion")
 	private Usuario usuarioActualiza;
