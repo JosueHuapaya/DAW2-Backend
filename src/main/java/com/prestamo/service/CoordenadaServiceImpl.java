@@ -1,6 +1,7 @@
 package com.prestamo.service;
 
 import com.prestamo.entity.Coordenada;
+import com.prestamo.entity.Usuario;
 import com.prestamo.repository.CoordenadaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,9 +18,9 @@ public class CoordenadaServiceImpl implements CoordenadaService {
     private CoordenadaRepository coordenadaRepository;
 
     @Override
-    public List<Coordenada> findAll() {
+    public List<Usuario> listaPrestamistariosTotales(Usuario usuario) {
 
-        return coordenadaRepository.findAll();
+        return coordenadaRepository.listaPrestamistariosTotales();
 
     }
 
