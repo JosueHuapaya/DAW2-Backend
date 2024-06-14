@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9da97884-e99d-4120-84fc-d55934564e92" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/prestamo/controller/DataCatalogoRegistroController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/prestamo/repository/CatalogoRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prestamo/controller/RegistroCuentaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prestamo/controller/RegistroCuentaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prestamo/entity/Cuenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prestamo/entity/Cuenta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prestamo/repository/DataCatalogoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prestamo/repository/DataCatalogoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prestamo/service/DataCatalogoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prestamo/service/DataCatalogoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prestamo/service/DataCatalogoServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prestamo/service/DataCatalogoServiceImp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +42,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.ProyectoDawiiBackendApplication.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -48,9 +51,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.ProyectoDawiiBackendApplication.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "PC1-Aguayo",
+    "git-widget-placeholder": "PC1-Tenorio",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/SEX/PROYECTODAW2/dawi_backend_202402_sab_dom_grupo_04",
+    "last_opened_file_path": "C:/Users/USUARIO/Desktop/OneDrive - CIBERTEC/Escritorio/Cibertec/Sexto ciclo/Modulo 2/DAW2/Para examen/dawi_backend_202402_sab_dom_grupo_04",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -59,16 +62,16 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
+  <component name="RunManager" selected="Application.ProyectoDawiiBackendApplication">
+    <configuration name="ProyectoDawiiBackendApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.prestamo.ProyectoDawiiBackendApplication" />
       <module name="ProyectoDAWIIBackend" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="ProyectoDAWIIBackend" />
-      <option name="filePath" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.prestamo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -81,12 +84,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ProyectoDawiiBackendApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+        <option value="jdk-21.0.2-corretto-21.0.2-4caba194b151-51586f01" />
       </set>
     </attachedChunks>
   </component>
