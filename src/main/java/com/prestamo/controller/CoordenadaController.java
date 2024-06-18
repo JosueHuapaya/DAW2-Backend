@@ -1,21 +1,25 @@
 package com.prestamo.controller;
 
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
 import com.prestamo.entity.Coordenada;
 import com.prestamo.entity.Ubigeo;
 import com.prestamo.entity.Usuario;
 import com.prestamo.repository.UbigeoRepository;
 import com.prestamo.service.CoordenadaService;
-import com.prestamo.service.UbigeoService;
 import com.prestamo.util.AppSettings;
-import org.apache.coyote.Response;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
 
 @RestController
 @RequestMapping("/url/coordenadas")

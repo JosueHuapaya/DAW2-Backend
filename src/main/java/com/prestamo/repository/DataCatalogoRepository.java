@@ -2,8 +2,6 @@ package com.prestamo.repository;
 
 import java.util.List;
 
-import com.prestamo.entity.Catalogo;
-import com.prestamo.entity.Ejemplo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

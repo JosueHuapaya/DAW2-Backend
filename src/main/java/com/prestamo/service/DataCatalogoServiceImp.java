@@ -2,8 +2,6 @@ package com.prestamo.service;
 
 import java.util.List;
 
-import com.prestamo.entity.Catalogo;
-import com.prestamo.entity.Ejemplo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
