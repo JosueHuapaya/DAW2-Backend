@@ -23,4 +23,25 @@ public class GrupoServiceImp implements GrupoService {
 	public List<Grupo> listaGrupoPorDescripcionIgual(String descripcion) {
 		return repository.listaGrupoPorDescripcionIgual(descripcion);
 	}
+
+	@Override
+	public List<Grupo> listaGrupoPorDescripcionLike(String nombre) {
+		return repository.listaGrupoPorDescripcionLike(nombre);
+	}
+
+	@Override
+	public void eliminaGrupo(int idGrupo) {
+		repository.deleteById(idGrupo);
+		
+	}
+
+	@Override
+	public List<Grupo> listaGrupo() {
+		return repository.findAll();
+	}
+
+	@Override
+	public List<Grupo> listaGrupoPorDescripcionIgualActualiza(String descripcion, int idGrupo) {
+		return repository.listaGrupoPorDescripcionIgualActualiza(descripcion, idGrupo);
+	}
 }
