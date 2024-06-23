@@ -60,7 +60,7 @@ public class EntidadFinancieraRegistroController {
         }
     }
 
-    //
+    //AGREGANDO PC2-MAMANI
     @GetMapping("/listar")
     public ResponseEntity<List<EntidadFinanciera>> listarPorTipo(@RequestParam(name="idDataCatalogo",required = false) Integer idDataCatalogo){
 
