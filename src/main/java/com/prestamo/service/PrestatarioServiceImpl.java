@@ -56,4 +56,46 @@ public class PrestatarioServiceImpl implements PrestatarioService{
 		return prestatarioRepository.listaUsuarioPorDniIgual(dni);
 	}
 	
+	//T2
+	@Override
+	public void eliminarUsuario(int idUsuario) {
+		
+		prestatarioRepository.deleteById(idUsuario); 
+		
+	}
+
+	@Override
+	public List<Usuario> listaUsuarioPorLogin(String login) { 
+		
+		return prestatarioRepository.listaUsuarioPorLogin(login);
+	}
+
+	@Override
+	public List<Usuario> usuarioPorLoginIgualActu(String login, int idUsuario) { 
+		return prestatarioRepository.usuarioPorLoginIgualActu(login, idUsuario);
+	}
+
+	@Override
+	public List<Usuario> usuarioPorDniIgualActu(String dni, int idUsuario) { 
+		return prestatarioRepository.usuarioPorDniIgualActu(dni, idUsuario);
+	}
+
+	@Override
+	public List<Usuario> listarPrestatariosDeUnPrestamista(int idUsuario) {
+		return prestatarioRepository.listarPrestatariosDeUnPrestamista(idUsuario);
+	}
+	@Override
+	public List<Usuario> prestatariosDeUnPrestamista(int idUsuario, String login) { 
+		return prestatarioRepository.prestatariosDeUnPrestamista(idUsuario, login);
+	}
+
+	@Override
+	@Transactional
+	public void deleteUsuario(int idUsuario) { 
+		usuarioTieneRolRepository.deleteByUsuarioId(idUsuario);
+		
+		prestatarioRepository.deleteById(idUsuario);
+		
+	}
+	
 }
