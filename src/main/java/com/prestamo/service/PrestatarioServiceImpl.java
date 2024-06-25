@@ -53,6 +53,7 @@ public class PrestatarioServiceImpl implements PrestatarioService{
 
 	@Override
 	public List<Usuario> listaUsuarioPorDniIgual(String dni) {
+
 		return prestatarioRepository.listaUsuarioPorDniIgual(dni);
 	}
 	
