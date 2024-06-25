@@ -15,4 +15,8 @@ public interface GrupoService {
 		public abstract List<Grupo> listaGrupoPorDescripcionLike(String nombre);
 		public abstract void eliminaGrupo(int idGrupo);
 		public abstract List<Grupo> listaGrupo();
+		
+		//Para la consulta
+		public abstract List<Grupo> listaConsultaCompleja(String descripcion, int idUsuarioLider, int estado);
+		
 }
