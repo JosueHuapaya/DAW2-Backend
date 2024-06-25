@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9da97884-e99d-4120-84fc-d55934564e92" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prestamo/controller/CoordenadaControllerCRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prestamo/controller/CoordenadaControllerCRUD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prestamo/repository/CoordenadaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prestamo/repository/CoordenadaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prestamo/service/CoordenadaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prestamo/service/CoordenadaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prestamo/service/CoordenadaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prestamo/service/CoordenadaServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prestamo/service/PrestatarioServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prestamo/service/PrestatarioServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prestamo/controller/CuentaCrudController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prestamo/controller/CuentaCrudController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,9 +46,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.ProyectoDawiiBackendApplication.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "PC2-Borja",
+    "git-widget-placeholder": "PC2-Aguayo",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/victo/Desktop/Kira Proyecto/dawi_backend_202402_lun_grupo_05",
+    "last_opened_file_path": "D:/SEX/T2PROYECTODAWBACKEND/dawi_backend_202402_sab_dom_grupo_04",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -93,7 +88,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-21.0.2-corretto-21.0.2-4caba194b151-51586f01" />
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
       </set>
     </attachedChunks>
   </component>
@@ -113,6 +109,7 @@
       <workItem from="1719207198460" duration="1079000" />
       <workItem from="1719250672268" duration="17022000" />
       <workItem from="1719289288820" duration="5446000" />
+      <workItem from="1719354362414" duration="101000" />
     </task>
     <servers />
   </component>
