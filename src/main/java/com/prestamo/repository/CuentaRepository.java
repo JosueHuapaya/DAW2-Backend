@@ -7,7 +7,15 @@ import org.springframework.data.jpa.repository.Query;
 import java.util.List;
 
 public interface CuentaRepository extends JpaRepository<Cuenta, Integer> {
+
     @Query("select e from Cuenta e where e.numero = ?1")
     public abstract List<Cuenta> listaCuentaPorNumeroIgual(String numero);
-    public abstract Cuenta findByNumero (String numero);
+
+
+    @Query("select e from Cuenta e where e.numero like ?1%")
+    public abstract  List<Cuenta> listByNumeroLike(String numero);
+
+    @Query("select c from Cuenta c where c.numero = ?1 and c.idCuenta != ?2")
+    public abstract List<Cuenta> listaEjemploPorDescripcionIgualActualiza(String numero, int id);
+
 }

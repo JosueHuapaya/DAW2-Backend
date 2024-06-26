@@ -6,8 +6,13 @@ import java.util.List;
 
 public interface CuentaService {
 
-    public abstract Cuenta insertaActualizaCuenta(Cuenta obj);
-    public abstract Cuenta validarNumeroExiste(String numero);
-    public abstract List<Cuenta> listaCuenta();
+    // Validaciones
     public abstract List<Cuenta> listaCuentaPorNumeroIgual(String numero);
+    public abstract List<Cuenta> listCuentaByNumeroIgualActualiza(String numero, int id);
+
+    // CRUD
+    public abstract Cuenta insertaActualizaCuenta(Cuenta obj); // Reutilizando de la PC1
+    public abstract List<Cuenta> listByLike(String numero);
+    public abstract void deleteCuenta(int id);
+    public abstract List<Cuenta> listCuenta();
 }

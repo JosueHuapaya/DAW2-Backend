@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9da97884-e99d-4120-84fc-d55934564e92" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/prestamo/controller/CuentaCrudController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prestamo/controller/CuentaCrudController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prestamo/controller/RegistroCuentaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prestamo/controller/RegistroCuentaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prestamo/repository/CuentaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prestamo/repository/CuentaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prestamo/service/CuentaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prestamo/service/CuentaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prestamo/service/CuentaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prestamo/service/CuentaServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +114,7 @@
       <workItem from="1719207198460" duration="1079000" />
       <workItem from="1719250672268" duration="17022000" />
       <workItem from="1719289288820" duration="5446000" />
-      <workItem from="1719354362414" duration="101000" />
+      <workItem from="1719354362414" duration="7088000" />
     </task>
     <servers />
   </component>
