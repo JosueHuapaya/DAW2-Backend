@@ -27,6 +27,7 @@ public class Coordenada {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+
 	private int idCoordenada;
 	
 	private BigDecimal latitud;

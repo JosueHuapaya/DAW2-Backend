@@ -58,4 +58,11 @@ public class CoordenadaServiceImpl implements CoordenadaService {
         coordenadaRepository.deleteById(idCoordenada);
 
     }
+
+    @Override
+    public List<Coordenada> consultaComplejaCoordenada(BigDecimal latitud, BigDecimal longitud, String departamento) {
+
+            return coordenadaRepository.consultaComplejaCoordenada(latitud, longitud, departamento);
+
+    }
 }

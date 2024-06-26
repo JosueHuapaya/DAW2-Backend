@@ -6,11 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="9da97884-e99d-4120-84fc-d55934564e92" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prestamo/controller/CoordenadaControllerCRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prestamo/controller/CoordenadaControllerCRUD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prestamo/entity/Coordenada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prestamo/entity/Coordenada.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/prestamo/repository/CoordenadaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prestamo/repository/CoordenadaRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/prestamo/service/CoordenadaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prestamo/service/CoordenadaService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/prestamo/service/CoordenadaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prestamo/service/CoordenadaServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prestamo/service/PrestatarioServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prestamo/service/PrestatarioServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +35,9 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2hi7HYdIhlVrworAB8qBY2fCbq8" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -51,9 +53,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.ProyectoDawiiBackendApplication.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "PC2-Borja",
+    "git-widget-placeholder": "EF-Borja",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/victo/Desktop/Kira Proyecto/dawi_backend_202402_lun_grupo_05",
+    "last_opened_file_path": "C:/Users/victo/Desktop/Proyecto DAW II/dawi_backend_202402_sab_dom_grupo_04",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -113,6 +115,7 @@
       <workItem from="1719207198460" duration="1079000" />
       <workItem from="1719250672268" duration="17022000" />
       <workItem from="1719289288820" duration="5446000" />
+      <workItem from="1719352752812" duration="11200000" />
     </task>
     <servers />
   </component>
