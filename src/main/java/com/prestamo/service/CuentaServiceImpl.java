@@ -19,17 +19,27 @@ public class CuentaServiceImpl implements CuentaService{
     }
 
     @Override
-    public Cuenta validarNumeroExiste(String numero) {
-        return cuentarepository.findByNumero(numero);
+    public List<Cuenta> listCuenta() {
+        return cuentarepository.findAll();
     }
 
     @Override
-    public List<Cuenta> listaCuenta() {
-        return cuentarepository.findAll();
+    public List<Cuenta> listByLike(String numero) {
+        return cuentarepository.listByNumeroLike(numero);
+    }
+
+    @Override
+    public void deleteCuenta(int id) {
+        cuentarepository.deleteById(id);
     }
 
     @Override
     public List<Cuenta> listaCuentaPorNumeroIgual(String numero) {
         return cuentarepository.listaCuentaPorNumeroIgual(numero);
+    }
+
+    @Override
+    public List<Cuenta> listCuentaByNumeroIgualActualiza(String numero, int id) {
+        return cuentarepository.listaEjemploPorDescripcionIgualActualiza(numero, id);
     }
 }
