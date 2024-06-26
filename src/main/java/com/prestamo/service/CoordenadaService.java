@@ -15,5 +15,7 @@ public interface CoordenadaService {
     public Coordenada actualizarCoordenadas (Coordenada coordenada);
     public abstract List<Coordenada> obtenerCoordenadasPorPrimerosDigitosLatitud(String latitudDigito);
     void eliminarCoordenada(int idCoordenada);
+    public abstract List<Coordenada> consultaComplejaCoordenada(BigDecimal latitud, BigDecimal longitud, String departamento);
+
 
 }
