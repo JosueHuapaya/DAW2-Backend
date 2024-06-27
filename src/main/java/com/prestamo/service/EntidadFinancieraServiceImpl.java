@@ -35,6 +35,21 @@ public class EntidadFinancieraServiceImpl implements EntidadFinancieraService {
     }
 
     @Override
+    public List<EntidadFinanciera> listEntidadFinancieraAc(String nombre, int idEntidadFinanciera) {
+        return repo.findByEntidadActualiza(nombre, idEntidadFinanciera);
+    }
+
+    @Override
+    public void deleteEntidadFin(int idEntidadFinanciera) {
+        repo.deleteById(idEntidadFinanciera);
+    }
+
+    @Override
+    public List<EntidadFinanciera> listEntidadFinancieraLike(int entidad) {
+        return repo.findByEntidad(String.valueOf(entidad));
+    }
+
+    @Override
     public List<EntidadFinanciera> listar() {
         return repo.findAll();
     }

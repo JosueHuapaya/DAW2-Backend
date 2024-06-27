@@ -14,4 +14,11 @@ public interface EntidadFinancieraRepository extends JpaRepository<EntidadFinanc
 
     public List<EntidadFinanciera> findByTipoEntidadIdDataCatalogo(Integer idDataCatalogo);
 
+    @Query("select e from EntidadFinanciera e where str(e.tipoEntidad.idDataCatalogo) like %?1%")
+    public abstract List<EntidadFinanciera> findByEntidad(String entidad);
+
+    @Query("select e from EntidadFinanciera e where e.nombre = ?1 and e.idEntidadFinanciera != ?2")
+    public abstract List<EntidadFinanciera> findByEntidadActualiza(String nombre, int idEntidadFinanciera);
+
+
 }
