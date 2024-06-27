@@ -21,5 +21,7 @@ public interface PrestatarioService {
 	public abstract List<Usuario> prestatariosDeUnPrestamista(int idUsuario, String login);
 	public abstract List<Usuario> listarPrestatariosDeUnPrestamista(int idUsuario);
 	public void deleteUsuario(@Param("idUsuario") int idUsuario);
-
+	
+	//EF
+	public abstract List<Usuario> consultaPrestatarioCompleja(String nombres, String apellidos,String dni, String direccion);
 }

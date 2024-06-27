@@ -99,4 +99,9 @@ public class PrestatarioServiceImpl implements PrestatarioService{
 		
 	}
 	
+	//EF
+	@Override
+	public List<Usuario> consultaPrestatarioCompleja(String nombres, String apellidos, String dni, String direccion) {
+		return prestatarioRepository.consultaPrestatarioCompleja(nombres, apellidos, dni, direccion);
+	}
 }
