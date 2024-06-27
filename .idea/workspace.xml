@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9da97884-e99d-4120-84fc-d55934564e92" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prestamo/repository/DataCatalogoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prestamo/repository/DataCatalogoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prestamo/service/DataCatalogoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prestamo/service/DataCatalogoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prestamo/service/DataCatalogoServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prestamo/service/DataCatalogoServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="9da97884-e99d-4120-84fc-d55934564e92" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
