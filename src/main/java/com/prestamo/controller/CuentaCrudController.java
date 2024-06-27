@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.nio.file.Path;
 import java.util.*;
 
 @RestController
@@ -96,9 +97,9 @@ public class CuentaCrudController {
         return ResponseEntity.ok(data);
     }
 
-    @GetMapping("/validaNumero")
-    public String validateNumero(@RequestParam(name = "numero") String numero, @RequestParam(name = "id") int id) {
-        List<Cuenta> lst = _cuentaService.listCuentaByNumeroIgualActualiza(numero, id);
+    @GetMapping("/validaNumeroActualiza/{numero}/{idCuenta}")
+    public String validateNumero(@PathVariable String numero, @PathVariable int idCuenta) {
+        List<Cuenta> lst = _cuentaService.listCuentaByNumeroIgualActualiza(numero, idCuenta);
         if (lst.isEmpty()) {
             return "{\"valid\":true}";
         }

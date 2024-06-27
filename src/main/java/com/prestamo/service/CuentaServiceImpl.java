@@ -39,7 +39,7 @@ public class CuentaServiceImpl implements CuentaService{
     }
 
     @Override
-    public List<Cuenta> listCuentaByNumeroIgualActualiza(String numero, int id) {
-        return cuentarepository.listaEjemploPorDescripcionIgualActualiza(numero, id);
+    public List<Cuenta> listCuentaByNumeroIgualActualiza(String numero, int idCuenta) {
+        return cuentarepository.listCuentaByNroActualiza(numero, idCuenta);
     }
 }

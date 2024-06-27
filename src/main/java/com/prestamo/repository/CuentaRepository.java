@@ -16,6 +16,6 @@ public interface CuentaRepository extends JpaRepository<Cuenta, Integer> {
     public abstract  List<Cuenta> listByNumeroLike(String numero);
 
     @Query("select c from Cuenta c where c.numero = ?1 and c.idCuenta != ?2")
-    public abstract List<Cuenta> listaEjemploPorDescripcionIgualActualiza(String numero, int id);
+    public abstract List<Cuenta> listCuentaByNroActualiza(String numero, int idCuenta);
 
 }
