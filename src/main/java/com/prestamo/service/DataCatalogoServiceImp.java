@@ -14,16 +14,38 @@ public class DataCatalogoServiceImp implements DataCatalogoService {
 	private DataCatalogoRepository repository;
 	@Override
 	public List<DataCatalogo> listaDataCatalogo(int idTipo) {
+
 		return repository.listaDataCatalogo(idTipo);
 	}
 	@Override
 	public DataCatalogo registrar(DataCatalogo dataCatalogo) {
+
 		return repository.save(dataCatalogo);
+	}
+
+	@Override
+	public void eliminarDataCatalogo(int id) {
+		repository.deleteById(id);
+	}
+
+	@Override
+	public List<DataCatalogo> listaDataCatalogo() {
+		return repository.findAll();
 	}
 
 	@Override
 	public List<DataCatalogo> listaDataCatalogoPorDescripcionIgual(String descripcion) {
 		return repository.listaDataCatalogoPorDescripcionIgual(descripcion);
+	}
+
+	@Override
+	public List<DataCatalogo> listaDataCatalogoPorDescripcionIgualActualizar(String descripcion, int id) {
+		return repository.listaDataCatalogoPorDescripcionIgualActualizar(descripcion,id);
+	}
+
+	@Override
+	public List<DataCatalogo> listaDataCatalogoPorDescripcionLike(String nombre) {
+		return repository.listaDataCatalogoPorDescripcionLike(nombre);
 	}
 
 
