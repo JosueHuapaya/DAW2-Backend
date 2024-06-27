@@ -27,7 +27,7 @@ public class RegistroCuentaController {
 
     @GetMapping
     public ResponseEntity<List<Cuenta>> lista(){
-        List<Cuenta> lstSalida = cuentaService.listaCuenta();
+        List<Cuenta> lstSalida = cuentaService.listCuenta();
         return ResponseEntity.ok(lstSalida);
     }
 
