@@ -15,4 +15,8 @@ public interface EntidadFinancieraService {
     public List<EntidadFinanciera> listar();
     public List<EntidadFinanciera> listarPorTipo (Integer idTipoEntidad);
 
+    public abstract List<EntidadFinanciera> listEntidadFinancieraAc(String nombre, int idEntidadFinanciera);
+    public abstract void deleteEntidadFin(int idEntidadFinanciera);
+    public abstract List<EntidadFinanciera> listEntidadFinancieraLike(int entidad);
+
 }

@@ -5,6 +5,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 
+import com.prestamo.entity.Ejemplo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -61,23 +62,29 @@ public class EntidadFinancieraRegistroController {
     }
 
     //AGREGANDO PC2-MAMANI
-    @GetMapping("/listar")
-    public ResponseEntity<List<EntidadFinanciera>> listarPorTipo(@RequestParam(name="idDataCatalogo",required = false) Integer idDataCatalogo){
+   @GetMapping("/listar")
+   public ResponseEntity<List<EntidadFinanciera>> listarPorTipo(@RequestParam(name="idDataCatalogo",required = false) Integer idDataCatalogo){
 
-        List<EntidadFinanciera> lstSalida = new ArrayList<>();
+      List<EntidadFinanciera> lstSalida = new ArrayList<>();
 
-        try {
-            if (idDataCatalogo!=null) {
-                lstSalida = servicioEntidadFinanciera.listarPorTipo(idDataCatalogo);
-            }else {
-                lstSalida = servicioEntidadFinanciera.listar();
-            }
+      try {
+           if (idDataCatalogo!=null) {
+               lstSalida = servicioEntidadFinanciera.listarPorTipo(idDataCatalogo);
+           }else {
+               lstSalida = servicioEntidadFinanciera.listar();
+           }
 
-        }catch(Exception ex) {
+       }catch(Exception ex) {
             ex.printStackTrace();
-        }
-
-
+       }
         return ResponseEntity.ok(lstSalida);
     }
+
+   //@GetMapping("/listar")
+    //public ResponseEntity<List<EntidadFinanciera>> lista(){
+    //    List<EntidadFinanciera> lstSalida = servicioEntidadFinanciera.listar();
+    //    return ResponseEntity.ok(lstSalida);
+   // }
+
+
 }
