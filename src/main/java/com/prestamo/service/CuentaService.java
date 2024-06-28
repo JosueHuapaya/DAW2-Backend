@@ -15,4 +15,7 @@ public interface CuentaService {
     public abstract List<Cuenta> listByLike(String numero);
     public abstract void deleteCuenta(int id);
     public abstract List<Cuenta> listCuenta();
+
+    // Consulta
+    public abstract List<Cuenta> listCuentaCompleja(String numero, int entidad, int moneda, int tipoentidad, int estado);
 }
