@@ -15,6 +15,7 @@ mvnw.cmd
 .settings
 .springBeans
 .sts4-cache
+.idea
 bin
 
 # Ignorar el archivo application.properties de Spring
