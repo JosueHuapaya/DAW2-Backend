@@ -18,15 +18,7 @@ public interface CoordenadaRepository  extends JpaRepository<Coordenada, Integer
     @Query("SELECT r FROM Coordenada r WHERE CAST(r.latitud AS string) LIKE CONCAT(?1, '%')")
     List<Coordenada> obtenerCoordenadasPorPrimerosDigitosLatitud(String latitudDigito);
 
-    @Query("SELECT c, u.departamento " +
-            "FROM Coordenada c " +
-            "JOIN c.ubigeo u " +
-            "WHERE c.latitud = :latitud " +
-            "AND c.longitud = :longitud " +
-            "AND u.departamento = :departamento")
-    List<Coordenada> consultaComplejaCoordenada(@Param("latitud") BigDecimal latitud,
-                                              @Param("longitud") BigDecimal longitud,
-                                              @Param("departamento") String departamento);
-
+    @Query("SELECT c FROM Coordenada c " + "WHERE (:latitud = 0 or c.latitud = :latitud) " + "AND (:longitud = 0 or c.longitud = :longitud )" +"AND ( :departamento= '' or c.ubigeo.departamento = :departamento)")
+    List<Coordenada> consultaComplejaCoordenada(BigDecimal latitud, BigDecimal longitud, String departamento);
 
 }

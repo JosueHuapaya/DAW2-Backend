@@ -20,11 +20,13 @@ public class CoordenadaConsultaController {
 
     private CoordenadaService coordenadaService;
 
-    @GetMapping("/consultaComplejaCoordenada/{latitud}/{longitud}/{departamento}")
+    @GetMapping("/consultaComplejaCoordenada")
 
-    public List<Coordenada> consultaCompleja(@PathVariable BigDecimal latitud, @PathVariable BigDecimal longitud, @PathVariable String departamento) {
+    public List<Coordenada> consultaCompleja(@RequestParam("latitud") BigDecimal latitud, @RequestParam("longitud") BigDecimal longitud, @RequestParam("departamento") String departamento) {
 
-        return coordenadaService.consultaComplejaCoordenada(latitud, longitud, departamento);
+        List<Coordenada> lstSalida = coordenadaService.consultaComplejaCoordenada(latitud, longitud, departamento);
+
+        return lstSalida;
 
     }
 
