@@ -34,6 +34,11 @@ public class DataCatalogoServiceImp implements DataCatalogoService {
 	}
 
 	@Override
+	public List<DataCatalogo> listaConsultaComplejaDataCatalogo(String descripcion, int estado, int idCatalogo) {
+		return repository.listaConsultaComplejaDataCatalogo(descripcion,estado,idCatalogo);
+	}
+
+	@Override
 	public List<DataCatalogo> listaDataCatalogoPorDescripcionIgual(String descripcion) {
 		return repository.listaDataCatalogoPorDescripcionIgual(descripcion);
 	}

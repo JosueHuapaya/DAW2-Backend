@@ -17,6 +17,11 @@ public interface DataCatalogoRepository extends JpaRepository<DataCatalogo, Inte
 	public abstract List<DataCatalogo> listaDataCatalogoPorDescripcionLike(String descripcion);
 	@Query("select e from DataCatalogo e where e.descripcion = ?1 and e.idDataCatalogo != ?2 ")
 	public abstract List<DataCatalogo> listaDataCatalogoPorDescripcionIgualActualizar(String descripcion, int idEjemplo);
-
+	//consulta completa
+	@Query("select e from DataCatalogo e where " +
+			"(?1 = '' or e.descripcion like %?1%)  and " +
+			"(?2 = 1 or e.estado = ?2) and " +
+			" (?3 = -1 or e.catalogo.idCatalogo = ?3) ")
+	public abstract List<DataCatalogo> listaConsultaComplejaDataCatalogo(String descripcion, int estado, int idCatalogo);
 
 }

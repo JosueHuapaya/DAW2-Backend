@@ -16,5 +16,6 @@ public interface DataCatalogoService {
 	public abstract void eliminarDataCatalogo(int id);
 	public abstract List<DataCatalogo> listaDataCatalogo();
 
-
+	//consulta
+	public abstract  List<DataCatalogo> listaConsultaComplejaDataCatalogo(String descripcion, int estado, int idCatalogo);
 }
