@@ -50,6 +50,14 @@ public class EntidadFinancieraServiceImpl implements EntidadFinancieraService {
     }
 
     @Override
+    public List<EntidadFinanciera> consultarEntidadFinancieraCompleja(String nombre, String gerente, int idTipoEntidadF, int estado) {
+        if (nombre.equals("%") && gerente.equals("%") && idTipoEntidadF == -1 && estado == -1) {
+            return repo.findAll();
+        } else {
+            return repo.consultaEntidadCompleja(nombre, gerente, idTipoEntidadF, estado);
+    }
+    }
+    @Override
     public List<EntidadFinanciera> listar() {
         return repo.findAll();
     }
