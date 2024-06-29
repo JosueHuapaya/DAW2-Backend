@@ -30,4 +30,7 @@ public interface PrestatarioRepository extends JpaRepository<Usuario, Integer>{
 	@Query("Select u from Usuario u where u.usuarioSuperior =?1")
 	public abstract List<Usuario> listarPrestatariosDeUnPrestamista(int idUsuario);
 
+	//EF
+	@Query("select u from Usuario u where u.nombres like ?1 and" +" u.apellidos = ?2 and" +" u.dni = ?3 and" +" u.direccion = ?4")
+	public abstract List<Usuario> consultaPrestatarioCompleja(String nombres, String apellidos,String dni, String direccion);
 }

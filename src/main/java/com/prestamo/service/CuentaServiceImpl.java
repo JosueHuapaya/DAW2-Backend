@@ -24,6 +24,11 @@ public class CuentaServiceImpl implements CuentaService{
     }
 
     @Override
+    public List<Cuenta> listCuentaCompleja(String numero, int entidad, int moneda, int tipoentidad,int estado) {
+        return cuentarepository.listCuentaCompleja(numero, entidad, moneda, tipoentidad, estado);
+    }
+
+    @Override
     public List<Cuenta> listByLike(String numero) {
         return cuentarepository.listByNumeroLike(numero);
     }
