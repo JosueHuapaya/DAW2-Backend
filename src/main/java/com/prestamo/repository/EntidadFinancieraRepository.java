@@ -2,6 +2,7 @@ package com.prestamo.repository;
 
 import java.util.List;
 
+import com.prestamo.entity.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
@@ -20,5 +21,7 @@ public interface EntidadFinancieraRepository extends JpaRepository<EntidadFinanc
     @Query("select e from EntidadFinanciera e where e.nombre = ?1 and e.idEntidadFinanciera != ?2")
     public abstract List<EntidadFinanciera> findByEntidadActualiza(String nombre, int idEntidadFinanciera);
 
+    @Query("select e from EntidadFinanciera e where " + "e.nombre like %:nombre% and " + " e.gerente like %:gerente% and " + " (:idTipoEntidad = -1 OR e.tipoEntidad.idDataCatalogo = :idTipoEntidad) and " + " e.estado = :estado")
+    public abstract List<EntidadFinanciera> consultaEntidadCompleja(String nombre, String gerente, int idTipoEntidad, int estado);
 
 }
