@@ -38,7 +38,7 @@ public class SolicitudPrestamoRegistraController {
 	public ResponseEntity<?> registra(@RequestBody SolicitudPrestamo obj){
 		HashMap<String, Object> salida = new HashMap<>();
 		
-		//Datos que no completa el front
+		//Datos que no completa el formulario del front
 		
 		DataCatalogo estadoSolicitud = new DataCatalogo();
 	    estadoSolicitud.setIdDataCatalogo(12);
