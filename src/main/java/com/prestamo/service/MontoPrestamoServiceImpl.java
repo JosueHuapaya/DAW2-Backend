@@ -27,6 +27,24 @@ public class MontoPrestamoServiceImpl implements MontoPrestamoService{
 		return monto.findAll();
 	}
 
+	@Override
+	public List<MontoPrestamo> ListaCapital(int capital) {
+		// TODO Auto-generated method stub
+		return monto.ListarPorCapital(capital);
+	}
+
+	@Override
+	public List<MontoPrestamo> ListaCapitalActualiza(int capital, int idMontoPrestamo) {
+		// TODO Auto-generated method stub
+		return monto.ListarPorCapitalIgualActualiza(capital, idMontoPrestamo) ;
+	}
+
+	@Override
+	public void eliminaMonto(int idMonto) {
+		// TODO Auto-generated method stub
+		monto.deleteById(idMonto);
+	}
+
 	
 	
 }
