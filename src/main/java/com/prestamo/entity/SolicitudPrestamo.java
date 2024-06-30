@@ -41,11 +41,11 @@ public class SolicitudPrestamo {
 
 	@Temporal(TemporalType.DATE)
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
-	private Date fechaInicioPrestamo;
+	private String fechaInicioPrestamo;
 
 	@Temporal(TemporalType.DATE)
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
-	private Date fechaFinPrestamo;
+	private String fechaFinPrestamo;
 	
 	
 	@JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })
@@ -68,10 +68,12 @@ public class SolicitudPrestamo {
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd hh:mm:ss")
 	private Date fechaActualizacion;
 	
+	@JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "idUsuarioRegistro")
 	private Usuario usuarioRegistro;
 	
+	@JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "idUsuarioActualizacion")
 	private Usuario usuarioActualiza;

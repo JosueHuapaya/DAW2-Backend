@@ -34,4 +34,14 @@ public class SolicitudPrestamoServiceImpl implements SolicitudPrestamoService {
     public List<Usuario> listaPrestatariosTotales(Usuario usuario) {
         return repository.listaPrestatariosTotales();
     }
+
+	@Override
+	public List<SolicitudPrestamo> listaSolicitudPrestamoPorCapitalMenorQueLike(String capital) {
+		 try {
+	            Double capitalNum = Double.parseDouble(capital);
+	            return repository.listaSolicitudPrestamoPorCapitalMenorQueLike(capitalNum);
+	        } catch (NumberFormatException e) {
+	            return null;
+	        }
+	}
 }

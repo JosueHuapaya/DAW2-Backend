@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 
 import com.prestamo.entity.SolicitudPrestamo;
 import com.prestamo.entity.Usuario;
@@ -12,4 +13,7 @@ public interface SolicitudPrestamoRepository extends JpaRepository<SolicitudPres
 	
 	@Query("Select r from Usuario r, UsuarioHasRol u where r.idUsuario = u.usuario.idUsuario and u.rol.idRol = 4 order by r.apellidos desc ")
     public abstract List<Usuario> listaPrestatariosTotales();
+	
+	@Query("SELECT s FROM SolicitudPrestamo s JOIN FETCH s.usuarioRegistro WHERE s.capital < :capital")
+    public abstract List<SolicitudPrestamo> listaSolicitudPrestamoPorCapitalMenorQueLike(@Param("capital") Double capital);
 }
