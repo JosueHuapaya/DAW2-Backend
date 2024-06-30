@@ -16,4 +16,21 @@ public interface SolicitudPrestamoRepository extends JpaRepository<SolicitudPres
 	
 	@Query("SELECT s FROM SolicitudPrestamo s JOIN FETCH s.usuarioRegistro WHERE s.capital < :capital")
     public abstract List<SolicitudPrestamo> listaSolicitudPrestamoPorCapitalMenorQueLike(@Param("capital") Double capital);
+	
+	@Query("SELECT s FROM SolicitudPrestamo s WHERE "
+	         + "(:capital IS NULL OR s.capital = :capital) AND "
+	         + "(:dias IS NULL OR s.dias.idDataCatalogo = :dias) AND "
+	         + "(:montoPagar IS NULL OR s.montoPagar = :montoPagar) AND "
+	         + "(:fechaInicio IS NULL OR s.fechaInicioPrestamo >= :fechaInicio) AND "
+	         + "(:fechaFin IS NULL OR s.fechaFinPrestamo <= :fechaFin) AND "
+	         + "(:estadoSolicitud IS NULL OR s.estadoSolicitud.idDataCatalogo = :estadoSolicitud) AND "
+	         + "(:prestatario IS NULL OR s.usuarioPrestatario.idUsuario = :prestatario)")
+	public abstract List<SolicitudPrestamo> consultaCompleja(
+	        @Param("capital") Double capital,
+	        @Param("dias") Integer dias,
+	        @Param("montoPagar") Double montoPagar,
+	        @Param("fechaInicio") String fechaInicio,
+	        @Param("fechaFin") String fechaFin,
+	        @Param("estadoSolicitud") Integer estadoSolicitud,
+	        @Param("prestatario") Integer prestatario);
 }

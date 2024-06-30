@@ -44,4 +44,10 @@ public class SolicitudPrestamoServiceImpl implements SolicitudPrestamoService {
 	            return null;
 	        }
 	}
+
+	@Override
+	public List<SolicitudPrestamo> consultaCompleja(Double capital, Integer dias, Double montoPagar, String fechaInicio,
+            String fechaFin, Integer estadoSolicitud, Integer prestatario) {
+		return repository.consultaCompleja(capital, dias, montoPagar, fechaInicio, fechaFin, estadoSolicitud, prestatario);
+	}
 }

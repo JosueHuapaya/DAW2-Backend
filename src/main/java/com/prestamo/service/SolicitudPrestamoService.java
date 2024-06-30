@@ -15,4 +15,9 @@ public interface SolicitudPrestamoService {
 	
 	//Para el combo
 	public abstract List<Usuario> listaPrestatariosTotales(Usuario usuario);
+	
+	//Para la consulta
+	public abstract List<SolicitudPrestamo> consultaCompleja(
+            Double capital, Integer dias, Double montoPagar,
+            String fechaInicio, String fechaFin, Integer estadoSolicitud, Integer prestatario);
 }
