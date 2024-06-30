@@ -6,6 +6,7 @@ import com.prestamo.entity.SolicitudPrestamo;
 import com.prestamo.entity.Usuario;
 
 public interface SolicitudPrestamoService {
+	public abstract List<SolicitudPrestamo> listaSolicitudPrestamoPorCapitalMenorQueLike(String capital);
 
 	//Para el crud
 	public abstract SolicitudPrestamo insertaActualizaSolicitudPrestamo(SolicitudPrestamo obj);
