@@ -5,8 +5,8 @@
 * **Jorge Jacinto **
 
 ## Grupo  ✒️
-* 
-* 
+* Authenthication Completos
+* Crud Completos
 * 
 * 
 * 
